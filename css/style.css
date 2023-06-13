@@ -188,22 +188,19 @@ button {
 .header {
   /*Для header__bottom*/
   position: relative;
+  padding: 48px 0 36px;
+  background-color: var(--color-black-0);
   z-index: 6;
 }
 
-.header__top {
-  padding: 28px 0 29px; 
-  background-color: var(--color-black-0);
-}
-
-.header__top-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
 /*-Меню T-*/
 
-.header__top-nav {
+.header__nav {
   display: flex;  
   /*Добавлен, чтобы при сжимание Войти не заехало на блок*/
   margin-right: 30px;
@@ -212,7 +209,7 @@ button {
   /* flex-grow: 1; ?13.9 */
 }
 
-.header__top-list {
+.header__list {
   display: flex;
   /*Для переполнения*/
   flex-wrap: wrap;
@@ -222,17 +219,17 @@ button {
   width: 100%;
 }
 
-.header__top-item:not(:last-child) {
+.header__item:not(:last-child) {
   /*Кроме последнего*/
   margin-right: 4.8%;
 }
 /*
-.header__top-item:nth-last-child(2) {
+.header__item:nth-last-child(2) {
   Чтобы блок не переносило на другую строку
   margin-right: 0;
 }*/
 
-.header__top-link {
+.header__link {
   position: relative;
   display: inline-block;
   padding: 6px;
@@ -244,17 +241,17 @@ button {
   transition: color .4s ease;
 }
 
-.header__top-link:focus {
+.header__link:focus {
   background-color: var(--color-royal-purple);
   outline: none;
 }
 
-.header__top-link:hover {
+.header__link:hover {
   color: var(--color-heliotrope);
   background-color: inherit;
 }
 
-.header__top-link:active {
+.header__link:active {
   color: var(--color-royal-purple);
 }
 /***Конец шапки header***/
