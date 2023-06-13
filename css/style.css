@@ -200,7 +200,7 @@ button {
 
 /*-Меню T-*/
 
-.header__nav {
+.header__nav, .footer__nav {
   display: flex;  
   /*Добавлен, чтобы при сжимание Войти не заехало на блок*/
   margin-right: 30px;
@@ -209,7 +209,7 @@ button {
   /* flex-grow: 1; ?13.9 */
 }
 
-.header__list {
+.header__list, .footer__list {
   display: flex;
   /*Для переполнения*/
   flex-wrap: wrap;
@@ -219,7 +219,7 @@ button {
   width: 100%;
 }
 
-.header__item:not(:last-child) {
+.header__item:not(:last-child), .footer__item:not(:last-child) {
   /*Кроме последнего*/
   margin-right: 4.8%;
 }
@@ -229,7 +229,7 @@ button {
   margin-right: 0;
 }*/
 
-.header__link {
+.header__link, .footer__link {
   position: relative;
   display: inline-block;
   padding: 6px;
@@ -241,17 +241,17 @@ button {
   transition: color .4s ease;
 }
 
-.header__link:focus {
+.header__link:focus, .footer__link:focus {
   background-color: var(--color-royal-purple);
   outline: none;
 }
 
-.header__link:hover {
+.header__link:hover, .footer__link:hover {
   color: var(--color-heliotrope);
   background-color: inherit;
 }
 
-.header__link:active {
+.header__link:active, .footer__link:active {
   color: var(--color-royal-purple);
 }
 /***Конец шапки header***/
